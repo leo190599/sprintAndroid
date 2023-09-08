@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_padrao"
+    app:startDestination="@id/fragTelaInicio2">
+    <fragment
+        android:id="@+id/fragTelaInicio2"
+        android:name="com.example.sprint.FragTelaInicio"
+        android:label="FragTelaInicio" >
+        <action
+            android:id="@+id/action_fragTelaInicio2_to_fragTelaCadastro4"
+            app:destination="@id/fragTelaCadastro4" />
+        <action
+            android:id="@+id/action_fragTelaInicio2_to_fragTelaConsulta"
+            app:destination="@id/fragTelaConsulta" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragTelaCadastro4"
+        android:name="com.example.sprint.FragTelaCadastro"
+        android:label="FragTelaCadastro" />
+    <fragment
+        android:id="@+id/fragTelaConsulta"
+        android:name="com.example.sprint.FragTelaConsulta"
+        android:label="FragTelaConsulta" />
+</navigation>
